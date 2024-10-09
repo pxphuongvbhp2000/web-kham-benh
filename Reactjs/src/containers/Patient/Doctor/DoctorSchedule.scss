@@ -1,0 +1,84 @@
+.doctor-schedule-container {
+    border-right: 1px solid #ddd;
+    height: 100%;
+
+    .all-schedule {
+        select {    
+            width: 150px;
+            font-weight: 550;
+            border: none;
+            outline: none;
+            color: #337ab7;
+            border-bottom: 1px solid #999;
+            padding: 5px 0;
+            margin-bottom: 5px;
+            
+            option {
+                cursor: pointer;
+            }
+
+            option:focus {
+                border:0px;
+                outline:0px;
+                -webkit-appearance: none;
+                outline: none !important;
+            }
+        }
+    }
+
+    .all-available-time {
+        .text-calendar {
+            margin: 10px 0;
+            color: #333;
+
+            span {
+                text-transform: uppercase;
+                margin-left: 8px;
+            }
+        }
+
+        .time-content {
+            margin-bottom: 20px;
+
+            .time-content-btns {
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+                margin-bottom: 5px;
+
+                button {
+                    padding: 5px 10px;
+                    border:  none;
+                    outline: none;
+                    background-color: #fff04b;
+                    font-size: 13px;
+                    height: 40px;
+                    border-radius: 3px;
+                    font-weight: 550;
+                    color:  #333;
+    
+                    &:hover {
+                        background-color: #45c3d2;
+                        color: white;
+                    }
+                }
+    
+                .btn-vi {
+                    min-width: 120px;
+                }
+    
+                .btn-en {
+                    min-width: 145px;
+                }
+    
+                .no-schedule {
+                    font-style: italic;
+                }
+            }
+
+            .book-free {
+                margin-top: 10px;
+            }
+        }
+    }
+}

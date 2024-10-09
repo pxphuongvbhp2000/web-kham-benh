@@ -1,0 +1,11 @@
+.medical-facility-child {
+    cursor: pointer;
+    
+    .medical-facility-name {
+        padding: 10px 0;
+        
+        &:hover {
+            color: #45c3d2;
+        }
+    }
+}

@@ -1,0 +1,393 @@
+/**
+======================================================================================================================
+HOME HEADER - SCSS
+*/
+
+.home-header-content {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding-left: 40px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+
+    .left-content {
+        width: 20%;
+        display: flex;
+        align-items: center;
+
+        .header-logo {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transform: scale(0.5, 0.5);
+            margin-left: -45px;
+        }
+
+        i {
+            font-size: 25px;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+    .center-content {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .child-content {
+
+            .subs-title {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .right-content {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .support {
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            cursor: pointer;
+            color: #48bce2;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        .language-vi {
+            cursor: pointer;
+            margin: 0 10px;
+            font-weight: 600;
+            opacity: 0.2;
+
+            &.active {
+                opacity: 1;
+                color: rgb(201, 64, 82);
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .language-en {
+            cursor: pointer;
+            font-weight: 600;
+            opacity: 0.2;
+
+            &.active {
+                opacity: 1;
+                color: rgb(96, 96, 229);
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.home-header-banner {
+    height: 485px;
+    background-size: cover !important;
+    background: url('../../assets/header-background.jpg') center center no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        height: 65%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+
+        .title1 {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        .title2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 32px;
+            text-shadow: 1px 1px 1px #333;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .search {
+            margin: 0 auto;
+            display: flex;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 25px;
+            background: #f7d800;
+
+            i {
+                margin: 0 5px;
+            }
+
+            input {
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .content-down {
+        height: 35%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        .options {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+
+            .option-child {
+                width: 125px;
+                padding-top: 5px;
+
+                .icon-child {
+                    background: white;
+                    height: 40px;
+                    width: 40px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    i {
+                        font-size: 20px;
+                        color: #48bce2;
+                    }
+                }
+
+                .text-child {
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #45c3d2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+======================================================================================================================
+SECTION - SCSS
+*/
+
+.section-share {
+    height: 300px;
+    border-bottom: 3px solid #efeef5;
+
+    &.section-specialty {
+        background: #f5f5f5;
+    }
+
+    &.section-medical-facility {
+        background: white;
+    }
+
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
+    &.section-handbook {
+        background: white;
+    }
+
+    &.section-about {
+        background: #f5f5f5;
+        height: 500px !important;
+        padding: 0 100px;
+        height: 330px;
+
+        .section-about-header {
+            padding: 20px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .section-about-content {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+
+            .content-left {
+                width: 60%;
+
+                iframe {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+
+            .content-right {
+                width: 40%;
+                text-align: justify;
+                font-style: italic;
+                padding: 15px;
+            }
+        }
+    }
+
+
+    .section-container {
+        margin: 0 100px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                font-size: 11px;
+                margin-right: 15px;
+                color: #282e41;
+                float: right;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                background: #ebebeb;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        .section-body {
+
+            .section-customize {
+                padding-left: 20px;
+
+                .customize-bordor {
+                    width: 270px;
+                    padding: 20px;
+                    margin: 0 5px;
+                    border: 1px solid gray;
+                    cursor: pointer;
+                }
+
+                .bg-image {
+                    width: 278px;
+                    height: 150px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+
+                    &.section-specialty {
+                        // background-image: url('../../assets/specialty/co-xuong-khop.jpg');
+                    }
+
+                    &.section-medical-facility {
+                        // background-image: url('../../assets/medical-facility/benh-vien-thu-cuc.jpg');
+                    }
+
+                    &.section-outstanding-doctor {
+                        //background-image: url('../../assets/outstanding-doctor/anh-dai-dien-bs.jpg');
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                    }
+
+                    &.section-handbook {
+                        background-image: url('../../assets/handbook/phuong-phap-cat-amidan-cho-tr.jpg');
+                    }
+                }
+            }
+
+            .slick-prev {
+                height: 48px !important;
+                width: 44px !important;
+                left: -10px !important;
+                z-index: 1000;
+                background: #fff !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover {
+                    background: #d7d7d7 !important;
+                }
+            }
+
+            .slick-next {
+                height: 48px !important;
+                width: 44px !important;
+                right: -10px !important;
+                background: #fff !important;
+                border: 2px solid #d7d7d7 !important;
+
+                &:hover {
+                    background: #d7d7d7 !important;
+                }
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+                color: #959595 !important;
+                font-family: FontAwesome !important;
+            }
+        }
+    }
+}
+
+/**
+======================================================================================================================
+HOME FOOTER - SCSS
+*/
+
+.home-footer {
+    text-align: center;
+    padding-top: 8px;
+
+    a {
+        text-decoration: unset;
+    }
+}
